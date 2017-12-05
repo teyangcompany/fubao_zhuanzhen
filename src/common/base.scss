@@ -2,69 +2,86 @@
   默认主题颜色
   ==========*/
 
-
 /*==========
   默认样式
   ==========*/
 body, h1, h2, h3, h4, h5, h6, p,
-ul, li,  form,  button, span, i,
-input, textarea, th, td, header, footer, nav, div{
-  margin:0;
-  padding:0;
+ul, li, form, span, i,
+input, textarea, th, td, header, footer, nav {
+  margin: 0;
+  padding: 0;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
   color: #4d4d4d;
-  &:hover{
+  &:hover {
     color: #00b2b1;
   }
 }
-input{
+
+object {
+  height: 0;
+  display: none;
+}
+
+input {
   border: none;
   background: none;
   outline: none;
 }
-textarea{
+
+textarea {
   resize: none;
 }
+
 /*==========
     工具类
   ==========*/
 /*清楚浮动*/
 .clearfix:before,
-.clearfix:after{
+.clearfix:after {
   display: table;
   content: "";
 }
-.clearfix:after{
+
+.clearfix:after {
   clear: both;
 }
-.clearfix{
+
+.clearfix {
   *zoom: 1;
 }
+
 /*浮动*/
-.fl{
+.fl {
   float: left;
 }
-.fr{
+
+.fr {
   float: right;
 }
-.overflow-hidden{
+
+.overflow-hidden {
   overflow: hidden;
 }
+
 /*==========
   通用样式
   ==========*/
 /*引入阿里图标库引用*/
 .icon {
-  width: 1em; height: 1em;
+  width: 1em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
 }
+
 /*颜色*/
 $cBlue1: #667a9b;
 $cBlue2: #1d3968;
@@ -84,602 +101,748 @@ $cGray2: #a0a0a0;
 $cGray3: #898989;
 $cGray4: #a6a6a6;
 $cGray5: #cccccc;
-.jet-black{//深黑色
+.jet-black { //深黑色
   color: #333333;
 }
-.jet-gray{//深灰色
+
+.jet-gray { //深灰色
   color: #666666;
 }
-.light-gray{//浅灰色
+
+.light-gray { //浅灰色
   color: #bbbbbb;
 }
+
 /*背景颜色*/
-.bgc-white{
+.bgc-white {
   background-color: #fff;
 }
-.bgc-gray{
+
+.bgc-gray {
   background-color: #f9f9f9;
 }
+
 /*文字颜色*/
 $cGray6: #4F4F4F;
 $cPurple1: #ad9eed;
 $cYellow1: #ffbf34;
 /*关键字颜色，如已取消，金额等*/
-$keyWord: #ff0242;;
+$keyWord: #ff0242;
+;
 /*路由内容边框*/
 $contentBorder: #EDEDED;
 /*尺寸*/
-.h99{
+.h99 {
   height: 99px;
 }
-.h49{
+
+.h49 {
   height: 49px;
 }
-.h47{
+
+.h47 {
   height: 47px;
 }
-.h42{
+
+.h42 {
   height: 42px;
 }
-.h30{
+
+.h30 {
   height: 30px;
 }
-.h50{
+
+.h50 {
   height: 50px;
 }
-.h24{
+
+.h24 {
   height: 24px;
 }
-.h5{
+
+.h5 {
   height: 5px;
 }
-.h34{
+
+.h34 {
   height: 34px;
 }
-.h36{
+
+.h36 {
   height: 36px;
 }
-.h40{
+
+.h40 {
   height: 40px;
 }
-.h42{
+
+.h42 {
   height: 42px;
 }
-.h60{
+
+.h60 {
   height: 60px;
 }
-.h65{
+
+.h65 {
   height: 65px;
 }
-.h88{
+
+.h88 {
   height: 88px;
 }
-.h91{
+
+.h91 {
   height: 90px;
 }
-.h95{
+
+.h95 {
   height: 95px;
 }
-.h100{
+
+.h100 {
   height: 100px;
 }
 
-.h120{
+.h120 {
   height: 120px;
 }
-.h130{
+
+.h130 {
   height: 130px;
 }
-.h160{
+
+.h160 {
   height: 160px;
 }
-.h180{
+
+.h180 {
   height: 180px;
 }
-.h270{
+
+.h270 {
   height: 270px;
 }
-.h250{
+
+.h250 {
   height: 250px;
 }
-.h300{
+
+.h300 {
   height: 300px;
 }
-.h318{
+
+.h318 {
   height: 318px;
 }
-.h367{
+
+.h367 {
   height: 367px;
 }
-.h400{
+
+.h400 {
   height: 400px;
 }
-.w801{
+
+.w801 {
   width: 801px;
 }
-.w85{
+
+.w85 {
   width: 85px;
 }
-.w88{
+
+.w88 {
   width: 88px;
 }
-.w60{
+
+.w60 {
   width: 60px;
 }
-.w30{
+
+.w30 {
   width: 30px;
 }
-.w44{
+
+.w44 {
   width: 44px;
 }
-.w47{
+
+.w47 {
   width: 47px;
 }
-.w50{
+
+.w50 {
   width: 50px;
 }
-.w70{
+
+.w70 {
   width: 70px;
 }
-.w74{
+
+.w74 {
   width: 74px;
 }
-.w78{
+
+.w78 {
   width: 77px;
 }
-.w80{
+
+.w80 {
   width: 80px;
 }
-.w86{
+
+.w86 {
   width: 86px;
 }
-.w91{
+
+.w91 {
   width: 90px;
 }
-.w95{
+
+.w95 {
   width: 95px;
 }
-.w101{
+
+.w101 {
   width: 101px;
 }
-.w112{
+
+.w112 {
   width: 112px;
 }
-.w120{
+
+.w120 {
   width: 120px;
 }
-.w130{
+
+.w130 {
   width: 130px;
 }
-.w140{
+
+.w140 {
   width: 140px;
 }
-.w147{
+
+.w147 {
   width: 147px;
 }
-.w150{
+
+.w150 {
   width: 150px;
 }
-.w160{
+
+.w160 {
   width: 160px;
 }
-.w165{
+
+.w165 {
   width: 165px;
 }
-.w180{
+
+.w180 {
   width: 180px;
 }
-.w200{
+
+.w200 {
   width: 200px;
 }
-.w220{
+
+.w220 {
   width: 220px;
 }
-.w240{
+
+.w240 {
   width: 240px;
 }
-.w250{
+
+.w250 {
   width: 250px;
 }
-.w300{
+
+.w300 {
   width: 300px;
 }
-.w385{
+
+.w385 {
   width: 385px;
 }
-.w430{
+
+.w430 {
   width: 430px;
 }
-.w480{
+
+.w480 {
   width: 480px;
 }
-.w500{
+
+.w500 {
   width: 500px;
 }
-.w560{
+
+.w560 {
   width: 560px;
 }
-.w600{
+
+.w600 {
   width: 600px;
 }
-.marginT1{
+
+.marginT1 {
   margin-top: 1px;
 }
-.marginT5{
-  margin-top:5px;
+
+.marginT5 {
+  margin-top: 5px;
 }
-.marginT9{
+
+.marginT9 {
   margin-top: 9px;
 }
+
 .marginT10 {
   margin-top: 10px;
 }
+
 .marginT15 {
   margin-top: 15px;
 }
-.marginT20{
+
+.marginT20 {
   margin-top: 20px;
 }
-.marginT32{
+
+.marginT32 {
   margin-top: 32px;
 }
-.marginT35{
+
+.marginT35 {
   margin-top: 35px;
 }
-.marginT45{
+
+.marginT45 {
   margin-top: 45px;
 }
-.marginT60{
+
+.marginT60 {
   margin-top: 60px;
 }
-.marginT120{
+
+.marginT120 {
   margin-top: 120px;
 }
-.marginR10{
+
+.marginR10 {
   margin-right: 10px;
 }
-.marginR20{
+
+.marginR20 {
   margin-right: 20px;
 }
-.marginR25{
+
+.marginR25 {
   margin-right: 25px;
 }
-.marginR50{
+
+.marginR50 {
   margin-right: 50px;
 }
-.marginR100{
+
+.marginR100 {
   margin-right: 100px;
 }
-.marginL50{
+
+.marginL50 {
   margin-left: 50px;
 }
-.marginL5{
+
+.marginL5 {
   margin-left: 5px;
 }
-.marginL10{
+
+.marginL10 {
   margin-left: 10px;
 }
-.marginL15{
+
+.marginL15 {
   margin-left: 15px;
 }
-.marginL20{
+
+.marginL20 {
   margin-left: 20px;
 }
-.marginL25{
+
+.marginL25 {
   margin-left: 25px;
 }
-.marginL40{
+
+.marginL40 {
   margin-left: 40px;
 }
-.marginL59{
+
+.marginL59 {
   margin-left: 59px;
 }
-.marginL70{
+
+.marginL70 {
   margin-left: 70px;
 }
-.marginL201{
+
+.marginL201 {
   margin-left: 201px;
 }
-.marginB5{
+
+.marginB5 {
   margin-bottom: 5px;
 }
-.marginB20{
+
+.marginB20 {
   margin-bottom: 20px;
 }
-.marginB30{
+
+.marginB30 {
   margin-bottom: 30px;
 }
-.marginB10{
+
+.marginB10 {
   margin-bottom: 10px;
 }
-.marginB15{
+
+.marginB15 {
   margin-bottom: 15px;
 }
-.marginB25{
+
+.marginB25 {
   margin-bottom: 25px;
 }
-.marginB40{
+
+.marginB40 {
   margin-bottom: 40px;
 }
-.paddingT36{
+
+.paddingT36 {
   padding-top: 36px;
 }
-.paddingT10{
+
+.paddingT10 {
   padding-top: 10px;
 }
-.paddingT15{
+
+.paddingT15 {
   padding-top: 15px;
 }
-.paddingT20{
+
+.paddingT20 {
   padding-top: 20px;
 }
-.paddingL20{
+
+.paddingL20 {
   padding-left: 20px;
 }
-.paddingR20{
+
+.paddingR20 {
   padding-right: 20px;
 }
+
 /*字体大小*/
 .fontSize12 {
   font-size: 12px;
 }
-.fontSize14{
+
+.fontSize14 {
   font-size: 14px;
 }
+
 .fontSize16 {
   font-size: 16px;
 }
-.fontSize18{
+
+.fontSize18 {
   font-size: 18px;
 }
+
 /*字体粗细*/
-.fontBold{
+.fontBold {
   font-weight: bold;
 }
-.lineH30{
+
+.lineH30 {
   line-height: 30px;
 }
-.lineH40{
+
+.lineH40 {
   line-height: 40px;
 }
-.lineH22{
+
+.lineH22 {
   line-height: 22px;
 }
-.lineH25{
+
+.lineH25 {
   line-height: 25px;
 }
-.border-box{
+
+.border-box {
   box-sizing: border-box;
 }
-.circle{
+
+.circle {
   border-radius: 50%;
 }
-.inlineBlock{
+
+.inlineBlock {
   display: inline-block;
 }
+
 /*样式*/
-.app-container{
+.app-container {
   width: 100%;
 }
+
 /*内容容器 需不覆盖侧边栏*/
-.content-container{
+.content-container {
   margin-left: 216px;
   /*防止子元素margin-top时，父窗口一起*/
   //border-top: 1px solid transparent;
 }
+
 /*内容部分背景颜色*/
-.content-bg-color{
+.content-bg-color {
   background-color: $cWhite5;
 }
+
 /*路由页面中margin边距*/
-.marginP{
+.marginP {
   margin: 10px 10px 0 10px;
 }
-.paddingB10{
+
+.paddingB10 {
   padding-bottom: 10px;
 }
+
 .paddingP {
   padding: 10px 10px 0 10px;
 }
+
 /*隐藏标签*/
-.hidden{
+.hidden {
   display: none;
 }
-.center{
+
+.center {
   text-align: center;
 }
+
 /*element-ui 蓝色按钮样式*/
 //input输入框placeholder字体颜色
-.el-input__inner::-webkit-input-placeholder{
+.el-input__inner::-webkit-input-placeholder {
   color: #999999;
 }
-%blueBtn{
+
+%blueBtn {
   border-color: $cBlue6;
   background-color: $cBlue6;
   color: #fff;
-  &:hover{
+  &:hover {
     border-color: rgba(0, 178, 177, 0.65);
     background-color: rgba(0, 178, 177, 0.65);
     color: #fff;
   }
 }
+
 /*蓝色按钮 需外部加上wrap 否则权重不够*/
-.blue-btn-wrap{
-  .blue-btn{
+.blue-btn-wrap {
+  .blue-btn {
     border-color: $cBlue6;
     background-color: $cBlue6;
     color: #fff;
-    &:hover{
+    &:hover {
       border-color: rgba(0, 178, 177, 0.65);
       background-color: rgba(0, 178, 177, 0.65);
       color: #fff;
     }
   }
-  .gray-btn{
+  .gray-btn {
     border-color: #b2b2b2;
     background-color: #b2b2b2;
     color: #fff;
-    &:hover{
+    &:hover {
       border-color: #b2b2b2;
       background-color: #b2b2b2;
       color: #fff;
     }
   }
 }
+
 /*复选框按钮颜色*/
 //未选中
-.el-checkbox__inner{
+.el-checkbox__inner {
   width: 15px;
   height: 15px;
 }
+
 //选中
-.el-checkbox__input.is-checked .el-checkbox__inner{
+.el-checkbox__input.is-checked .el-checkbox__inner {
   border-color: $cBlue6;
   background-color: $cBlue6;
   width: 15px;
   height: 15px;
   //钩子样式
-  &:after{
+  &:after {
     transform: rotate(45deg) scaleY(0.8);
     margin-left: -1px;
   }
 }
+
 /*单选框按钮颜色*/
-.el-radio__input.is-checked .el-radio__inner{
+.el-radio__input.is-checked .el-radio__inner {
   border-color: $cBlue6;
   background-color: $cBlue6;
 }
+
 /*弹出框按钮样式*/
-.el-message-box__btns{
-  .el-button--default{
+.el-message-box__btns {
+  .el-button--default {
     color: $cBlue6;
     border-color: #dbe4e6;
-    &:hover{
+    &:hover {
       border-color: $cBlue6;
     }
   }
-  .el-button--primary{
+  .el-button--primary {
     @extend %blueBtn;
-    span{
+    span {
       color: #fff;
     }
   }
 }
+
 /*element消息推送样式*/
 //消息图标样式
-.el-notification .el-icon-information{
+.el-notification .el-icon-information {
   color: $cBlue6;
 }
+
 //tooltip提示样式
-.el-tooltip__popper{
+.el-tooltip__popper {
   max-width: 600px;
 }
+
 //badge标记边框去除，否则有白边
-.el-badge__content{
+.el-badge__content {
   border: none;
 }
+
 /*列表操作栏按钮样式*/
-.table-btn-wrap{
-  .table-btn{
+.table-btn-wrap {
+  .table-btn {
     width: 62px;
     height: 24px;
     line-height: 24px;
     padding: 0;
   }
 
-  .operate{
+  .operate {
     @extend %blueBtn;
   }
 }
-.ghost-btn-wrap{
-  .ghost-btn{
+
+.ghost-btn-wrap {
+  .ghost-btn {
     color: $cBlue6;
     border-color: #dbe4e6;
-    &:hover{
+    &:hover {
       border-color: $cBlue6;
       color: $cBlue6;
     }
   }
 }
-.ghost-btn{
+
+.ghost-btn {
   color: $cBlue6;
   border-color: #dbe4e6;
-  &:hover{
+  &:hover {
     border-color: $cBlue6;
     color: $cBlue6;
   }
 }
+
 /*跳转/密码重置成功登录样式*/
-.login-ok-wrap{
+.login-ok-wrap {
   width: 348px;
   margin: 80px auto;
 }
 
-.login-ok-title{
+.login-ok-title {
   font-size: 22px;
   font-weight: bold;
   line-height: 68px;
   color: #181818;
 }
-.login-ok-tips{
+
+.login-ok-tips {
   padding-left: 88px;
   padding-top: 14px;
   font-size: 14px;
   color: #5c5c5c;
 }
-.link-to-main{
+
+.link-to-main {
   color: $cBlue6;
 }
+
 /*列表样式固定行高*/
-.table-wrap{
+.table-wrap {
   color: #666665;
   height: 340px;
   overflow-y: hidden;
   /*行样式*/
-  tbody tr{
+  tbody tr {
     box-sizing: border-box;
     height: 40px;
     font-size: 12px;
   }
-  .cell{
+  .cell {
     padding-left: 10px;
     padding-right: 10px;
   }
-  tbody .cell{
+  tbody .cell {
     line-height: 15px;
   }
-  .el-table__body-wrapper{
+  .el-table__body-wrapper {
     height: 300px;
   }
-  .el-table__body-wrapper td{
+  .el-table__body-wrapper td {
     border: none;
   }
   /*element-ui类名 这里改变标题头背景颜色*/
-  .el-table__header-wrapper th{
+  .el-table__header-wrapper th {
     background-color: $cWhite5;
-    .cell{
+    .cell {
       background-color: $cWhite5;
     }
   }
   /*斑马条样式*/
-  tbody{
-    tr:nth-child(even){
+  tbody {
+    tr:nth-child(even) {
       background-color: $cWhite5;
     }
   }
 }
+
 //弹出消息盒子列表样式
-.header-content-item{
+.header-content-item {
   .el-dialog__header {
     padding: 0 20px 0 20px;
   }
   .el-dialog__body {
     padding: 0 20px 20px 20px;
   }
-  .el-dialog__close:hover{
+  .el-dialog__close:hover {
     color: $cBlue6;
   }
 }
+
 .box-table-wrap {
   color: #666665;
   height: 440px;
@@ -714,75 +877,91 @@ $contentBorder: #EDEDED;
     }
   }
 }
+
 /*分页样式*/
-.el-pager li.active{
+.el-pager li.active {
   background-color: $cBlue6;
   border-color: $cBlue6;
 }
-.el-pager li:hover{
+
+.el-pager li:hover {
   //color: $cBlue6;
   color: rgba(0, 104, 178, 0.98);
 }
+
 //箭头
-.el-pagination .btn-next .el-icon:hover{
+.el-pagination .btn-next .el-icon:hover {
   color: $cBlue6;
 }
-.el-pagination .btn-prev .el-icon:hover{
+
+.el-pagination .btn-prev .el-icon:hover {
   color: $cBlue6;
 }
+
 //页码输入框
-.el-pagination__editor:focus{
+.el-pagination__editor:focus {
   border-color: $cBlue6;
 }
+
 /*更改字体为绿色类名*/
-.green-color{
+.green-color {
   color: $cBlue6;
 }
+
 /*更改字体为灰色类名*/
-.gray-color{
+.gray-color {
   color: #979797;
 }
+
 /*更改字体为白色类名*/
-.white-color{
+.white-color {
   color: #fff;
 }
+
 /*列表是否安排颜色*/
-.table-status-green{
+.table-status-green {
   color: #22ca11;
 }
-.table-status-red{
+
+.table-status-red {
   color: #ff0242;
 }
+
 /*input 获得焦点时边框颜色*/
-.el-select .el-input__inner:focus{
+.el-select .el-input__inner:focus {
   border: 1px solid $cBlue6;
 }
-.el-input__inner{
-  &:focus{
-    border: 1px solid $cBlue6;
-  }
-}
-.el-textarea__inner{
 
-  &:focus{
+.el-input__inner {
+  &:focus {
     border: 1px solid $cBlue6;
   }
 }
-.hover-cursor{
+
+.el-textarea__inner {
+
+  &:focus {
+    border: 1px solid $cBlue6;
+  }
+}
+
+.hover-cursor {
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: $cBlue6;
   }
 
 }
+
 /*点击放大图片工具样式*/
-.popWhole{
+.popWhole {
   display: none;
   width: 100%;
   height: 100%;
 
 }
-.popImage{
+
+.popImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -792,7 +971,8 @@ $contentBorder: #EDEDED;
   opacity: 0.5;
   z-index: 100;
 }
-.popDisplayPicture{
+
+.popDisplayPicture {
   position: absolute;
   //width: 500px;
   //height: 500px;
@@ -808,8 +988,9 @@ $contentBorder: #EDEDED;
   opacity: 1;
   z-index: 100;
 }
+
 //图片切换按钮
-.director-image{
+.director-image {
   position: absolute;
   width: 100px;
   text-align: center;
@@ -823,15 +1004,16 @@ $contentBorder: #EDEDED;
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 100;
-  .director-span{
+  .director-span {
     font-size: 40px;
     color: #fff;
-    &:hover{
+    &:hover {
       color: $cBlue6;
     }
   }
 }
-.my-unique-close{
+
+.my-unique-close {
   position: absolute;
   right: 30px;
   top: 30px;
@@ -840,74 +1022,90 @@ $contentBorder: #EDEDED;
   cursor: pointer;
 }
 
-.commonbox-box{
-  width:80%;
-  box-sizing:border-box;
-  margin-left:10%;
-  border:1px solid #ccc;
+.commonbox-box {
+  width: 80%;
+  box-sizing: border-box;
+  margin-left: 10%;
+  border: 1px solid #ccc;
   padding: 20px 0px;
-  position:relative;
-  margin-top:20px;
+  position: relative;
+  margin-top: 20px;
 }
-.commonbox-card{
-  width:50%;
-  margin-left:25%;
-  height:50px;
+
+.commonbox-card {
+  width: 50%;
+  margin-left: 25%;
+  height: 50px;
   background: #ccc;
-  margin-top:10px;
+  margin-top: 10px;
 }
-.commonbox-box h1{
+
+.commonbox-box h1 {
   font-weight: normal;
   font-size: 22px;
   line-height: 50px;
   text-align: center;
 }
-.commonbox-con{
-  width:90%;
-  margin-left:10%;
-  margin-top:10px;
-  height:350px;
+
+.commonbox-con {
+  width: 90%;
+  margin-left: 10%;
+  margin-top: 10px;
+  height: 350px;
 }
-.commonbox-news{
+
+.commonbox-news {
   box-sizing: border-box;
-  width:49%;
-  float:left;
+  width: 49%;
+  float: left;
 }
-.commonbox-news span{
-  font-size:16px;
-  line-height:30px;
-  color:#504F54;
+
+.commonbox-news span {
+  font-size: 16px;
+  line-height: 30px;
+  color: #504F54;
 }
-.commonbox-news div{
-  height:30px;
+
+.commonbox-news div {
+  height: 30px;
 }
-.commonbox-btn{
-  width:30%;
-  height:60px;
-  position:absolute;
-  right:20px;
-  bottom:0px;
+
+.commonbox-btn {
+  width: 30%;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
 }
-.success{
+
+.success {
   font-size: 64px;
   text-align: center;
 }
-.commonboxbtn{
-  border:1px solid #ccc;
-}
-.commonboxbtn:hover{
-  border:1px solid #01abac;
-}
-.success1{
-  border:1px solid #ccc;
-  color:#01abac;
 
-}
-.success1:hover{
-  border:1px solid #01abac;
-  color:#01abac;
-}
-.success1:focus{
-  color:#01abac;
+.commonboxbtn {
+  border: 1px solid #ccc;
 }
 
+.commonboxbtn:hover {
+  border: 1px solid #01abac;
+}
+
+.success1 {
+  border: 1px solid #ccc;
+  color: #01abac;
+
+}
+
+.success1:hover {
+  border: 1px solid #01abac;
+  color: #01abac;
+}
+
+.success1:focus {
+  color: #01abac;
+}
+
+.flex {
+  display: flex;
+}

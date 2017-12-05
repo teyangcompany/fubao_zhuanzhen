@@ -1,6 +1,6 @@
 import axios from "axios";
 import config from "./config"
-import {debug} from "./util";
+import {debug, makeRandom} from "./util";
 import {tokenCache} from "./cache";
 import {Message} from "element-ui"
 
@@ -14,16 +14,19 @@ function getErrmsg(errmsg) {
 export default function (service, options, conf) {
   let baseParams = config.base_params,
     data = {
+      service,
       ...baseParams,
       ...options
     },
     token = tokenCache.get();
   token && (data.token = token);
-
+  data.random = makeRandom(4);
+  const sign = hex_md5(hex_md5(config.password) + JSON.stringify(data));
   let axiosConfig = {
-    url: data.mock ? "/api" : config.api_url + service,
+    url: data.mock ? "/api" : config.api_url,
     method: "post",
     headers: {
+      "sign": sign,
       "Content-Type": "application/json"
     },
     data: data
@@ -42,8 +45,8 @@ export default function (service, options, conf) {
       }
     })
     .then((data) => {
-      if (data.errno != 0) {
-        Message.error(getErrmsg(data.errmsg));
+      if (data.code != 0) {
+        Message.error(data.msg || "服务器错误：" + data.code);
       }
       return data;
     });
