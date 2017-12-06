@@ -19,7 +19,6 @@
   import http from "../lib/http"
   import {mapGetters, mapMutations, mapActions} from "vuex"
   import * as types from "../store/types"
-  import {getMenusFromData} from "../lib/functions"
   import AppSide from "./home/aside"
   import AppHeader from "./home/header"
 
@@ -45,8 +44,6 @@
       this.mainStyle = {
         height: `${height - 85}px`
       }
-
-      this.getAdminMenu();
     },
     mounted() {
 
@@ -55,22 +52,7 @@
 
     },
     methods: {
-      async getAdminMenu() {
-        this.loadedMenu = true;
-        let ret = await http('/admin/menu');
-        this.loadedMenu = false;
-        if (ret.errno == 0) {
-          this.handleMenus({menus: ret.data, path: this.$route.path});
-          let list = getMenusFromData(ret.data), key = list.findIndex((menu) => {
-            return menu.url == this.$route.path;
-          })
-          this.$nextTick(() => {
-            this.$refs.elMenu.open(list[key].cate);
-          })
-        }
 
-      },
-      ...mapActions(['handleMenus'])
     }
   };
 </script>

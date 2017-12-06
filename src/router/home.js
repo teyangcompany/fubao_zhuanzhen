@@ -1,6 +1,8 @@
 import Home from "../pages/home.vue"
 import HomeMain from "../pages/home/main.vue"
 
+import ConsultGroup from "./consult-group"
+
 export default [
   {
     path: "/home",
@@ -9,7 +11,8 @@ export default [
       needLogin: true
     },
     children: [
-      {path: "", component: HomeMain}
+      {path: "", component: HomeMain},
+      ...ConsultGroup
     ]
   }
 ]

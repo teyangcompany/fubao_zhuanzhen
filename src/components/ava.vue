@@ -1,11 +1,11 @@
 <template>
-    <div
-            :style="avaStyle"
-            class="ava overflow-hidden">
-        <img
-                :style="imgStyle"
-                :src="src" alt="">
-    </div>
+  <div
+    :style="avaStyle"
+    class="ava overflow-hidden">
+    <img
+      :style="imgStyle"
+      :src="src" alt="">
+  </div>
 </template>
 
 <script>
@@ -46,7 +46,7 @@
             this.imgStyle = {
               width: `${this.width}px`
             }
-          }else {
+          } else {
             this.imgStyle = {
               height: `${this.height}px`
             }
@@ -55,8 +55,6 @@
         } catch (error) {
 
         }
-
-
       },
       getImgPromise(url) {
         return new Promise((res, rej) => {
@@ -75,7 +73,7 @@
 </script>
 
 <style scoped lang="scss">
-    .ava {
-        border-radius: 50%;
-    }
+  .ava {
+    border-radius: 50%;
+  }
 </style>

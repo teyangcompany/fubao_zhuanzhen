@@ -8,20 +8,19 @@ import {userToken} from "./cache";
 export const mainTableMixin = {
   data() {
     return {
-      $_mainTableMixin_tableHeight: 0
+      mainTableMixin_tableHeight: 100
     }
   },
   mounted() {
-    this.$_mainTableMixin_calcTableHeight();
+    this.mainTableMixin_calcTableHeight();
   },
   methods: {
-    $_mainTableMixin_calcTableHeight() {
-      let h = 60 + 45 + 85 + 30;
+    mainTableMixin_calcTableHeight() {
+      let h = 85 + 20 + 55 + 40;
       if (this.footerHeight) {
         h += this.footerHeight;
       }
-      debug("h", h, window.innerHeight);
-      this.$_mainTableMixin_tableHeight = window.innerHeight - h;
+      this.mainTableMixin_tableHeight = window.innerHeight - h;
     }
   }
 }
